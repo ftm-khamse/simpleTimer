@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="h-screen flex items-center justify-center bg-gray-200">
+
+    <div class="p-10 rounded-xl shadow-xl bg-white text-center">
+        <h1 class="text-gray-600 font-bold text-2xl mb-7">Timer</h1>
+        <div class="w-50 h-50 bg-gray-200 rounded-full mb-7
+        flex items-center justify-center border-2 border-gray-600  relative"
+        id="circle">
+            <h1 class="font-bold text-3xl " id="time">00:00</h1>
+            <div class="absolute top-0 -translate-y-1 w-full h-full">
+                <div class="w-2 h-2 rounded-full bg-gray-800 absolute
+            top-0 left-1/2 -translate-x-2"></div>
+            </div>
+        </div>
+        <div class="text-center mt-2.5">
+
+            <button class="px-3 py-1  rounded-2xl  bg-gray-400 cursor-pointer
+            text-black border-2 border-gray-600 shadow-xl font-bold mr-1"
+            id="reset">
+            <i class="fas fa-refresh mr-1 text-white"></i></button>
+
+            <button class="px-3 py-1 bg-gray-400 rounded-2xl cursor-pointer
+            text-black border-2 border-gray-600 shadow-xl font-bold"
+            id="play">
+            <i class="fas fa-play mr-1 text-green-600"></i></button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
